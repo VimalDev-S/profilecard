@@ -1,11 +1,9 @@
-import { useState } from "react";
-
-function FavoriteFoods() {
-  const foods = ["protien", "eggs", "red meet", "beef", "chicken"];
-  const [message, setMessage] = useState("Select a food that you love!");
+function App() {
+  const foods = ["protein", "eggs", "red meat", "beef", "chicken"];
 
   function handleClick(food) {
-    setMessage(`I love ${food}!`);
+    const messageElement = document.getElementById("message");
+    messageElement.textContent = `I love ${food}!`;
   }
 
   return (
@@ -20,9 +18,9 @@ function FavoriteFoods() {
         ))}
       </ul>
 
-      <h3>{message}</h3>
+      <h3 id="message">Select a food that you love!</h3>
     </div>
   );
 }
 
-export default FavoriteFoods;
+export default App;
