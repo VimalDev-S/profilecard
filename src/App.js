@@ -1,3 +1,5 @@
+
+import About from './About';
 import image from './images/Cartoon-Person-PNG.png'
 function App() {
   const cstyle={
@@ -17,7 +19,8 @@ function App() {
    <div className='d-flex justify-content-center align-items-center vh-100' >
     <div className="card "style={cstyle}>
       <div className='row'>
-        <div className='col-6'>
+      
+
 
       <img className="card-img-top"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZBgaNycIkDwZ8Qp3KqiardaRmuO9DC_eA3Q&s" style={{width:"200px",height:"250px"}}/>
       </div>
@@ -26,11 +29,13 @@ function App() {
       </div>
       </div>
       <div className="card-body text-center">
+        
          <h4 class="card-title">{name}</h4>
          <p class="card-text">{description}</p>
       </div>
     </div>
-   </div>
+    
+  
   );
 }
 
